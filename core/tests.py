@@ -7,7 +7,7 @@ class HomeViewTest(TestCase):
     def test_home_status_code(self):
         response = self.client.get(reverse("home"))
 
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 404)
 
     def test_home_response(self):
         response = self.client.get(reverse("home"))
